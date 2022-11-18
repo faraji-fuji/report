@@ -1,0 +1,206 @@
+/**
+ * General Styles 
+ */
+html, body{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.txt-light{
+    color: azure;
+}
+
+/**
+ * Layout  
+ * 
+ * Main
+ *  - Set margin on the left and on the right
+ */
+.container{
+    display: flex;
+}
+
+.header,
+.footer{
+    flex: 1 100%;
+}
+
+.sidebar{
+    flex: 1;
+}
+
+.main{
+    flex: 2;
+    margin: 0 0 0 20vw;
+}
+
+/**
+ * General Classes
+ * 
+ * font-sans: set font family 
+ */
+.font-sans {
+    font-family: scandia-web,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji!important;
+}
+
+/**
+ * Main content
+ */
+.main{
+    padding: 2vh 2vw;
+    background-color: rgb(248, 252, 252);
+}
+
+h1{
+    font-family:Verdana, Geneva, Tahoma, sans-serif ;
+    font-weight: lighter;
+    color: rgb(48, 59, 59);
+    /* font-style: italic; */
+}
+
+h2{
+    color: rgb(40, 141, 141);
+    font-weight: lighter;    
+}
+
+h2:hover{
+    border-bottom: 1px solid  rgb(40, 141, 141);
+    width: fit-content;
+}
+
+p{
+    color: rgb(109, 129, 129);
+}
+
+/**
+ * side navigation 
+ */
+aside{
+    position: fixed;
+    width: 20vw;
+    height: 100vh;
+    z-index: 100;
+    color: antiquewhite;
+    background-color: rgb(40, 141, 141);
+}
+
+.nav{
+    list-style: none;
+    margin: 0;
+    padding-left: 1vw;
+}
+
+.nav-item{
+    margin: 10px 20px;
+}
+
+.nav-link{
+    text-decoration: none;
+    color:azure ;
+    transition-property: all;
+    transition-duration: 0.5s;
+}
+
+.nav-link:hover{
+    padding-left: 1vw;
+    color: rgb(245, 216, 174);
+}
+
+.nav-link:active{
+    color: rgb(255, 165, 40);
+    font-style: italic;
+}
+
+.nav-font-lighter{
+    font-weight: lighter;
+}
+
+/**
+ * About Me
+ */
+ .container{
+    width: 60vw;
+    min-height: 73vh;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+ }
+
+ .profile-image{
+    width: 25vw;
+    box-shadow: 10px 10px 5px lightslategray;
+    border-radius: 3px 30px;
+
+    transition: all 0.2s;
+    transition-timing-function: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+ }
+
+ .profile-image:hover{
+    transform: scale(1.025);
+ }
+
+
+ .ref{
+    list-style-type: none;
+ }
+
+ .ref-item{
+
+ }
+
+/**
+* Bibliography
+*/
+.bibliography-container{
+    min-height: 73vh;
+    width: 74vw;
+}
+
+/**
+ * Footer
+ * footer: 
+ *      - set background color
+ *      - set margin on the left
+ * footer ul: 
+ *      - set flexbox properties
+ *      - justify content to the end of the box
+ * footer ul li: 
+ *      - remove default list styles
+ *      - set color and font weight
+ *      - add transition effects
+ * footer ul li a:
+ *      - remove default link style
+ * footer ul li:hover::after
+ *      - footer item styles on hover
+ */
+.footer{
+    background-color: rgb(206, 228, 228);
+    margin-left: 20vw;
+}
+
+.footer ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+}
+
+.footer ul li{
+    list-style-type: none;
+    margin: 10px;
+    color: rgb(34, 50, 51);
+    font-weight: lighter;
+
+    transition: all 0.2s;
+}
+
+.footer ul li a{
+    text-decoration: none;
+}
+
+.footer ul li:hover{
+    transform: scale(1.1);
+}
